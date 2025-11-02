@@ -1,6 +1,6 @@
-# MyCppProject
+# SanctumCore
 
-A production-ready C++ project template.
+
 
 ## Building
 
