@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: SanctumPyCore
+Version: 0.1.0
+Summary: Your C++ Python bindings package
+Author-email: Your Name <your.email@example.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Sanctum
+
+Python bindings for C++ library.
+
+## Installation
+
+```bash
+pip install sanctum
