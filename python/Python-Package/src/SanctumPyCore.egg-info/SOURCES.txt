@@ -1,10 +1,12 @@
 README.md
 pyproject.toml
-src/SanctumPyCore/SanctumPython.pyd
-src/SanctumPyCore/libgcc_s_seh-1.dll
-src/SanctumPyCore/libstdc++-6.dll
-src/SanctumPyCore/libwinpthread-1.dll
+src/SanctumPyCore/__init__.py
 src/SanctumPyCore.egg-info/PKG-INFO
 src/SanctumPyCore.egg-info/SOURCES.txt
 src/SanctumPyCore.egg-info/dependency_links.txt
 src/SanctumPyCore.egg-info/top_level.txt
+src/SanctumPyCore/SanctumCore/SanctumPython.pyd
+src/SanctumPyCore/SanctumCore/libgcc_s_seh-1.dll
+src/SanctumPyCore/SanctumCore/libstdc++-6.dll
+src/SanctumPyCore/SanctumCore/libwinpthread-1.dll
+src/SanctumPyCore/src/main.py

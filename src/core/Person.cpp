@@ -11,23 +11,25 @@ namespace sanctum {
 
         // Constructors
         Person::Person() : id(nextId++), name("Unknown"), age(0), email("") {}
-
         Person::Person(const std::string& name, int age)
             : id(nextId++), name(name), age(age), email("") {}
-
-        Person::Person(const std::string& name, int age, const std::string& email)
-            : id(nextId++), name(name), age(age), email(email) {}
+        Person::Person(const std::string& name, int age, const std::string& email, const std::string& phone_number,const std::string& DOB)
+            : id(nextId++), name(name), age(age), email(email),phone_number(phone_number), DOB(DOB){}
 
         // Getters
         std::string Person::getName() const { return name; }
         int Person::getAge() const { return age; }
         std::string Person::getEmail() const { return email; }
         int Person::getId() const { return id; }
+        std::string Person::getPhoneNumber() const { return phone_number; }
+        std::string Person::getDOB() const { return DOB; }
 
         // Setters
         void Person::setName(const std::string& name) { this->name = name; }
         void Person::setAge(int age) { this->age = age; }
         void Person::setEmail(const std::string& email) { this->email = email; }
+        void Person::setPhoneNumber(std::string& phone_number) { this->phone_number = phone_number; }
+        void Person::setDOB(const std::string& DOB) { this->DOB = DOB; }
 
         // Business logic methods
         bool Person::isAdult() const { return age >= 18; }

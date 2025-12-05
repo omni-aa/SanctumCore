@@ -13,18 +13,21 @@ PYBIND11_MODULE(SanctumPython, m) {
         // Constructors
         .def(py::init<>())
         .def(py::init<const std::string&, int>())
-        .def(py::init<const std::string&, int, const std::string&>())
+        .def(py::init<const std::string&, int, const std::string&,const std::string&>())
 
         // Getters
         .def("getName", &sanctum::core::Person::getName)
         .def("getAge", &sanctum::core::Person::getAge)
         .def("getEmail", &sanctum::core::Person::getEmail)
         .def("getId", &sanctum::core::Person::getId)
+        .def("getPhoneNumber", &sanctum::core::Person::getPhoneNumber)
+
 
         // Setters
         .def("setName", &sanctum::core::Person::setName)
         .def("setAge", &sanctum::core::Person::setAge)
         .def("setEmail", &sanctum::core::Person::setEmail)
+        .def("setPhoneNumber", &sanctum::core::Person::setPhoneNumber)
 
         // Business logic
         .def("isAdult", &sanctum::core::Person::isAdult)
@@ -47,6 +50,7 @@ PYBIND11_MODULE(SanctumPython, m) {
         .def_property("age", &sanctum::core::Person::getAge, &sanctum::core::Person::setAge)
         .def_property("email", &sanctum::core::Person::getEmail, &sanctum::core::Person::setEmail)
         .def_property_readonly("id", &sanctum::core::Person::getId)
+        .def("phoneNumber", &sanctum::core::Person::getPhoneNumber)
 
         // Web analysis method
         .def("analyze_text_for_matches", &sanctum::core::Person::analyzeTextForMatches);

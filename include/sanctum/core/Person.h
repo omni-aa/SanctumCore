@@ -14,18 +14,22 @@ namespace sanctum {
             // Constructors
             Person();
             Person(const std::string& name, int age);
-            Person(const std::string& name, int age, const std::string& email);
+            Person(const std::string& name, int age, const std::string& email, const std::string &phone_number,const std::string& DOB);
 
             // Getters
             std::string getName() const;
             int getAge() const;
             std::string getEmail() const;
             int getId() const;
+            std::string getPhoneNumber() const;
+            std::string getDOB() const;
 
             // Setters
             void setName(const std::string& name);
             void setAge(int age);
             void setEmail(const std::string& email);
+            void setPhoneNumber(std::string& phone_number);
+            void setDOB(const std::string &DOB);
 
             // Business logic methods
             bool isAdult() const;
@@ -49,6 +53,8 @@ namespace sanctum {
             std::string name;
             int age;
             std::string email;
+            std::string phone_number;
+            std::string DOB;
         };
 
     } // namespace core
