@@ -5,4 +5,4 @@ Python bindings for C++ library.
 ## Installation
 
 ```bash
-pip install sanctum
+pip install sanctumpycore.whl
